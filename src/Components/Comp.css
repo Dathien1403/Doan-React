@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* MENU */
+.menu {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+.menu p {
+  transition: ease-out 0.3s;
+  color: black;
+}
+.menu p:hover {
+  box-shadow: 0 2px #ff5252;
+  transform: translateY(-5px);
+}
+/* ABOUT */
+.about{
+    text-align: center;
+}
+.about img{
+    border-radius: 10px;
+}
+.title{
+    font-size: 30px;
+    margin-top: 50px;
+}
+.sub-title{
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+    /* ABOUT - 1  */ 
+.bout-1 {
+  display: grid;
+  grid-template-columns: 50px 100px 50px 50px;
+  grid-template-rows: 30px 30px;
+  grid-gap: 230px;
+  align-items: center;
+  width: 1050px;
+  padding-top: 200px;
+  margin: 0 auto;
+}
+.bout-1 img{
+    transition: ease-out 0.3s;
+}
+.bout-1 img:hover{
+    transform: scale(1.1);
+}
+.pic1{
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.pic2{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.pic6{
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+/* ABOUT - 2 */
+.bout-2-grid{
+    display: grid;
+    grid-template-columns: 150px 900px;
+    grid-template-rows: 50px 50px;
+    grid-gap: 10px;
+    margin: 0 auto;
+    width: 1050px;
+    padding-top: 300px;
+} 
+.bout-2-pic{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.bout-2-flex{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    margin-left: 200px;
+}
+.bout-2-content{
+    margin-top: 300px;
+    width: 500px;
+    font-size: 20px;
+    margin-left: 300px;
+}
+
+/* ABOUT - 3 */
+.bout-3 img{
+    margin-right: 60px;
+    margin-top: 700px;
+    margin-bottom: 50px;
+} 
+
+/* ABOUT - FOOTER */
+.bout-footer{
+    background-color: #ff5252;
+    color: white;
+    height: 200px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+}
+.bout-footer img{
+    animation: up-down 0.5s infinite alternate;
+}
+
+@keyframes up-down{
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-20px);
+    }
+}
+
+.bout-footer-info{
+    text-align: left;
+    margin-top: 10px;
+}
+.bout-footer-form label{
+    font-size: 30px;
+    margin-top: 10px;
+}
+.bout-footer-form input{
+    margin-top: 10px;
+}
+
+/* PRODUCT */
+.product{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+}
+.product-item{
+    display: flex;
+    flex-flow: column ;
+}
