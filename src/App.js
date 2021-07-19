@@ -4,6 +4,7 @@ import Logo from "./Components/Logo";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import ProductList from "./DB/ProductList";
 import Menu from "./Components/Menu";
+import Product from "./Components/Product";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <Home />
       <Route path="/" exact component={BodyContent} />
       <Route path="/about" component={About} />
-      <Route path="/product" component={ProductList} />
+      <Route path="/product" component={Product} />
     </Router>
   );
 }

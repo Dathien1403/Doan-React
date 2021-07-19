@@ -1,71 +1,59 @@
-import React, { useState } from "react";
-import Product from "../Components/Product";
+import img1 from "../assets/images/ham.png";
+import img2 from "../assets/images/coke.png";
+import img3 from "../assets/images/baocaosu.jpg";
+import img4 from "../assets/images/chongmuoi.jpg";
+import img5 from "../assets/images/matna.jpg";
+import img6 from "../assets/images/suaruamat.jpg";
+import img7 from "../assets/images/quethuthai.jpg";
+import img8 from "../assets/images/viennang.jpg";
 
-const ProductList = () => {
-  const [products, setProducts] = useState([
-    {
-      id: "1",
-      name: "Burger Beef",
-      des: "Delicious",
-      price: "15$",
-      img: "ham.png",
-    },
-    {
-      id: "2",
-      name: "Burger Chicken",
-      des: " Very Delicious",
-      price: "25$",
-      img: "ham.png",
-    },
-    {
-      id: "3",
-      name: "Burger Poke",
-      des: " Really Delicious",
-      price: "10$",
-      img: "ham.png",
-    },
-    {
-      id: "4",
-      name: "Burger Duck",
-      des: " Really Delicious",
-      price: "10$",
-      img: "ham.png",
-    },
-    {
-      id: "5",
-      name: "Cocacola",
-      des: " Freaking Delicious",
-      price: "5$",
-      img: "coke.png",
-    },
-    {
-      id: "6",
-      name: "Pepsi",
-      des: " Freaking Delicious",
-      price: "5$",
-      img: "coke.png",
-    },
-    {
-      id: "7",
-      name: "Fanta",
-      des: " Freaking Delicious",
-      price: "5$",
-      img: "coke.png",
-    },
-    {
-      id: "8",
-      name: "Sprite",
-      des: " Freaking Delicious",
-      price: "5$",
-      img: "coke.png",
-    },
-  ]);
-  return (
-    <div>
-      {products.map((product) => (
-        <Product name={product.name} price={product.price} img={product.img} des={product.des} />
-      ))}
-    </div>
-  );
-};
-export default ProductList;
+export const products = [
+  {
+    ID: 1,
+    Images: `${img1}`,
+    Name: "Burger Beef",
+    Price: "10,500 vnd",
+  },
+  {
+    ID: 2,
+    Images: `${img1}`,
+    Name: "Burger Chicken",
+    Price: "11,500 vnd",
+  },
+  {
+    ID: 3,
+    Images: `${img1}`,
+    Name: "Burger Poke",
+    Price: "195,000 vnd",
+  },
+  {
+    ID: 4,
+    Images: `${img1}`,
+    Name: "Burger Duck",
+    Price: "39,000 vnd",
+  },
+  {
+    ID: 5,
+    Images: `${img2}`,
+    Name: "Cocacola",
+    Price: "12,000 vnd",
+  },
+  {
+    ID: 6,
+    Images: `${img2}`,
+    Name: "Fanta",
+    Price: "10,500 vnd",
+  },
+  {
+    ID: 7,
+    Images: `${img2}`,
+    Name: "Pesi",
+    Price: "23,000 vnd",
+  },
+  {
+    ID: 8,
+    Images: `${img2}`,
+    Name: "Sprite",
+    Price: "27,000 vnd",
+  },
+];
