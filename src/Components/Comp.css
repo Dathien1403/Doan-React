@@ -132,12 +132,33 @@
 }
 
 /* PRODUCT */
-.product{
-    display: flex;
-    flex-flow: row;
-    justify-content: space-evenly;
-}
 .product-item{
     display: flex;
-    flex-flow: column ;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 1000px;
+    border: 1px black solid;
+    border-radius: 10px;
+}
+.product-item img{
+    border-radius: 10px;
+}
+.product-item a{
+    text-decoration: none;
+    color:#43A047;
+    /* background-color: #43A047; */  
+    height: 50px;
+    line-height: 50px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    transition: ease-in 0.2s;
+    font-weight: 500;
+    font-size: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.product-item a:hover{
+    /* background-color: #ff525; */
+    transform: translateY(-10px);
 }
