@@ -1,19 +1,17 @@
-import { useState } from "react";
 import "./App.css";
 import About from "./Components/About";
 import Logo from "./Components/Logo";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import ProductList from "./DB/ProductList";
 import Menu from "./Components/Menu";
 
 function App() {
-
   return (
     <Router>
       <Home />
       <Route path="/" exact component={BodyContent} />
-      <Route path="/about"  component={About} />
-      <Route path="/product"  component={ProductList} />
+      <Route path="/about" component={About} />
+      <Route path="/product" component={ProductList} />
     </Router>
   );
 }
@@ -27,8 +25,8 @@ const Home = () => (
         </div>
       </div>
       <div>
-          <Menu/>
-        </div>
+        <Menu />
+      </div>
     </div>
   </div>
 );
@@ -45,8 +43,8 @@ const BodyContent = () => (
       <p className="bd-content-button">Khám phá ngay nào!!</p>
     </div>
     <div className="pic">
-      <img className="parents" src="coke.png" width="450px" />
-      <img className="child" src="ham.png" width="450px" />
+      <img alt="imgcoke" className="parents" src="coke.png" width="450px" />
+      <img alt="imgham" className="child" src="ham.png" width="450px" />
     </div>
   </div>
 );
