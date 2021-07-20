@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from '../Components/Footer';
 import "./Comp.css";
 import imgchef from "../assets/images/chef.jpg";
 import imgham1 from "../assets/images/ham1.jpg";
@@ -14,9 +15,9 @@ import imgham3 from "../assets/images/ham3.jpg";
 import imgcoca from "../assets/images/coca.jpg";
 import imgham4 from "../assets/images/ham4.jpg";
 import imgpep from "../assets/images/pep.jpg";
-import imglog from "../assets/images/log.png";
 export default function About() {
   return (
+    <div>
     <div className="about">
       <h3 className="title">một chút thông tin về cibus...</h3>
 
@@ -81,41 +82,8 @@ export default function About() {
         <img alt="imgham4" src={imgham4} width="200px" />
         <img alt="imgpep" src={imgpep} width="170px" />
       </div>
-
-      <div className="bout-footer">
-        <img alt="imglog" src={imglog} />
-        <div className="bout-footer-info">
-          <p>
-            <span style={{ fontWeight: "500" }}>Địa chỉ</span>: 123/4, tổ 5,
-            phường 6, quận 7, TP Hồ Chí Minh
-          </p>
-          <p>
-            <span style={{ fontWeight: "500" }}>Tel</span>: (012) 345 678 ~ 9
-          </p>
-          <p>
-            <span style={{ fontWeight: "500" }}>Fax</span>: (012) 345 678 ~ 9
-          </p>
-          <p>
-            <span style={{ fontWeight: "500" }}>Email</span>:
-            cibus.contact@gmail.com
-          </p>
-        </div>
-        <div className="bout-footer-form">
-          <form>
-            <label for="title">Gửi thông tin hỗ trợ</label>
-            <br />
-            <input
-              className="form-control"
-              type="text"
-              id="email"
-              name="email"
-              placeholder="Nhập email của bạn"
-            />{" "}
-            <br />
-            <input class="btn btn-primary" type="submit" value="Gửi" />
-          </form>
-        </div>
-      </div>
+    </div>
+    <Footer />
     </div>
   );
 }
