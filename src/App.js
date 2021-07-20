@@ -2,9 +2,10 @@ import "./App.css";
 import About from "./Components/About";
 import Logo from "./Components/Logo";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import ProductList from "./DB/ProductList";
 import Menu from "./Components/Menu";
 import Product from "./Components/Product";
+import imgcoke from "../src/assets/images/coke.png";
+import imgham from "../src/assets/images/ham.png";
 
 function App() {
   return (
@@ -44,8 +45,8 @@ const BodyContent = () => (
       <p className="bd-content-button">Khám phá ngay nào!!</p>
     </div>
     <div className="pic">
-      <img alt="imgcoke" className="parents" src="coke.png" width="450px" />
-      <img alt="imgham" className="child" src="ham.png" width="450px" />
+      <img alt="imgcoke" className="parents" src={imgcoke} width="450px" />
+      <img alt="imgham" className="child" src={imgham} width="450px" />
     </div>
   </div>
 );

@@ -1,11 +1,6 @@
 import img1 from "../assets/images/ham.png";
 import img2 from "../assets/images/coke.png";
-import img3 from "../assets/images/baocaosu.jpg";
-import img4 from "../assets/images/chongmuoi.jpg";
-import img5 from "../assets/images/matna.jpg";
-import img6 from "../assets/images/suaruamat.jpg";
-import img7 from "../assets/images/quethuthai.jpg";
-import img8 from "../assets/images/viennang.jpg";
+
 
 export const products = [
   {
