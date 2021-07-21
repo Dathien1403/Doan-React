@@ -1,6 +1,6 @@
-import React from "react";
-import Footer from '../Components/Footer';
+import React, { Component } from "react";
 import "./Comp.css";
+import FooterAbout from "./FooterAbout";
 import imgchef from "../assets/images/chef.jpg";
 import imgham1 from "../assets/images/ham1.jpg";
 import imgfarm from "../assets/images/farm.jpg";
@@ -15,75 +15,92 @@ import imgham3 from "../assets/images/ham3.jpg";
 import imgcoca from "../assets/images/coca.jpg";
 import imgham4 from "../assets/images/ham4.jpg";
 import imgpep from "../assets/images/pep.jpg";
-export default function About() {
-  return (
-    <div>
-    <div className="about">
-      <h3 className="title">một chút thông tin về cibus...</h3>
+class About extends Component {
+  render() {
+    return (
+      <div>
+        <div>
+          <div className="about">
+            <h3 className="title">một chút thông tin về cibus...</h3>
 
-      <p className="sub-title">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book{" "}
-      </p>
+            <p className="sub-title">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book{" "}
+            </p>
 
-      <div className="bout-1">
-        <div className="pic1">
-          <img alt="imgchef" src={imgchef} width="230px" />
-        </div>
-        <div className="pic2">
-          <img alt="imgham1" src={imgham1} width="300px" />
-        </div>
-        <div className="pic3">
-          <img alt="imgfarm" src={imgfarm} width="230px" />
-        </div>
-        <div className="pic4">
-          <img alt="imgcoca3" src={imgcoca3} width="230px" />
-        </div>
-        <div className="pic5">
-          <img alt="imgchicken" src={imgchicken} width="230px" />
-        </div>
-        <div className="pic6">
-          <img alt="imgham2" src={imgham2} width="350px" />
-        </div>
-      </div>
+            <div className="bout-1">
+              <div className="pic1">
+                <img alt="imgchef" src={imgchef} width="230px" />
+              </div>
+              <div className="pic2">
+                <img alt="imgham1" src={imgham1} width="300px" />
+              </div>
+              <div className="pic3">
+                <img alt="imgfarm" src={imgfarm} width="230px" />
+              </div>
+              <div className="pic4">
+                <img alt="imgcoca3" src={imgcoca3} width="230px" />
+              </div>
+              <div className="pic5">
+                <img alt="imgchicken" src={imgchicken} width="230px" />
+              </div>
+              <div className="pic6">
+                <img alt="imgham2" src={imgham2} width="350px" />
+              </div>
+            </div>
 
-      <div className="bout-2">
-        <div className="bout-2-grid">
-          <img
-            alt="imgcoca2"
-            src={imgcoca2}
-            width="400px"
-            className="bout-2-pic"
-          />
-          <div className="bout-2-flex">
-            <img alt="imgbeef" src={imgbeef} width="200px" height="150px" />
-            <img alt="imgsalad" src={imgsalad} width="200px" height="150px" />
-            <img
-              alt="imgcheese"
-              src={imgcheese}
-              width="200px"
-              height="150px"
-            />
+            <div className="bout-2">
+              <div className="bout-2-grid">
+                <img
+                  alt="imgcoca2"
+                  src={imgcoca2}
+                  width="400px"
+                  className="bout-2-pic"
+                />
+                <div className="bout-2-flex">
+                  <img
+                    alt="imgbeef"
+                    src={imgbeef}
+                    width="200px"
+                    height="150px"
+                  />
+                  <img
+                    alt="imgsalad"
+                    src={imgsalad}
+                    width="200px"
+                    height="150px"
+                  />
+                  <img
+                    alt="imgcheese"
+                    src={imgcheese}
+                    width="200px"
+                    height="150px"
+                  />
+                </div>
+                <p className="bout-2-content">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book
+                </p>
+              </div>
+            </div>
+
+            <div className="bout-3">
+              <img alt="imgham3" src={imgham3} width="240px" />
+              <img alt="imgcoca" src={imgcoca} width="200px" />
+              <img alt="imgham4" src={imgham4} width="200px" />
+              <img alt="imgpep" src={imgpep} width="170px" />
+            </div>
           </div>
-          <p className="bout-2-content">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book
-          </p>
+          <FooterAbout />
         </div>
       </div>
-
-      <div className="bout-3">
-        <img alt="imgham3" src={imgham3} width="240px" />
-        <img alt="imgcoca" src={imgcoca} width="200px" />
-        <img alt="imgham4" src={imgham4} width="200px" />
-        <img alt="imgpep" src={imgpep} width="170px" />
-      </div>
-    </div>
-    <Footer />
-    </div>
-  );
+    );
+  }
 }
+
+export default About;
