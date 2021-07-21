@@ -46,7 +46,7 @@ class Product extends Component {
         ) : (
           <div className="row m-0">
             <div className="col-2">
-              <div class="list-group">
+              <div className="list-group">
                 <h2 className="list-group-item list-group-item-action active">
                   Các loại sản phẩm
                 </h2>
@@ -54,7 +54,6 @@ class Product extends Component {
             </div>
             <div className="col-10">
               <div className="row m-0">
-                {" "}
                 {products.map((p) => (
                   <div className="col-3 p-2" key={p.ID}>
                     <div className="card-item">

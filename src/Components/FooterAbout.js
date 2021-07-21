@@ -32,9 +32,9 @@ class Footer extends Component {
                 id="email"
                 name="email"
                 placeholder="Nhập email của bạn"
-              />{" "}
+              />
               <br />
-              <input class="btn btn-primary" type="submit" value="Gửi" />
+              <input className="btn btn-primary" type="submit" value="Gửi" />
             </form>
           </div>
         </div>
