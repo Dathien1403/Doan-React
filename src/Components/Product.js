@@ -45,7 +45,14 @@ class Product extends Component {
           />
         ) : (
           <div className="row m-0">
-            <div className="product">
+            <div className="col-2">
+              <div className="list-group">
+                <h2 className="list-group-item list-group-item-action active">
+                  Các loại sản phẩm
+                </h2>
+              </div>
+            </div>
+            <div className="col-10">
               <div className="row m-0">
                 {products.map((p) => (
                   <div className="col-6 col-lg-4" key={p.ID}>
