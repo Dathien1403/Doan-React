@@ -45,23 +45,15 @@ class Product extends Component {
           />
         ) : (
           <div className="row m-0">
-            <div className="col-2">
-              <div class="list-group">
-                <h2 className="list-group-item list-group-item-action active">
-                  Các loại sản phẩm
-                </h2>
-              </div>
-            </div>
-            <div className="col-10">
+            <div className="product">
               <div className="row m-0">
-                {" "}
                 {products.map((p) => (
-                  <div className="col-3 p-2" key={p.ID}>
+                  <div className="col-6 col-lg-4" key={p.ID}>
                     <div className="card-item">
                       <Card>
                         <CardImg
                           top
-                          width="100%"
+                          width="400px"
                           src={p.Images}
                           alt="Card image cap"
                         />
@@ -71,7 +63,7 @@ class Product extends Component {
                             {p.Price}
                           </CardSubtitle>
                           <Button onClick={() => this.handleOnClick(p)}>
-                            Mua
+                            Đặt Hàng
                           </Button>
                         </CardBody>
                       </Card>
